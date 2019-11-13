@@ -1,0 +1,10 @@
+<h1>Reviews:</h1>
+
+<ol>
+<% @reviews.each do |r| %>
+  <li class="card"><%= r.content %> (Rating: <%= r.rating %>)</li>
+<% end %>
+</ol>
+
+
+<%= link_to 'Back to Restaurant', restaurant_path(@restaurant) %>
